@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: saddlebrown;
+}
+form{
+    margin-top: 30px;
+}
+.formContainer{
+    background-color: aqua;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 9px;
+    width: 80%;
+    margin: 0 auto;
+}
+input,textarea,label{
+    display: block;
+    width: 100%;
+}
+label{
+    margin-top: 16px;
+}
+
+.formContainer div{
+    text-align: center;
+}
+button{
+    margin-top: 20px;
+    padding: 7px;
+}

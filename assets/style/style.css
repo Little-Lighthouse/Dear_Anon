@@ -1,0 +1,14 @@
+nav, footer{
+    background-color: #0b2358;
+}
+.active{
+    font-weight: bolder !important;
+    background-color: #c01b5a;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 600px){
+    .imgWelcome{
+        width: 90vw !important;
+    }
+}

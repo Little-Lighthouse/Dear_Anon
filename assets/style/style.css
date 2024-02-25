@@ -52,3 +52,12 @@ button{
     box-shadow: 20px 10px 7px #333;
     font-family: "Patrick Hand", cursive;
 }
+
+a.thankYou{
+    width: 160px;
+    margin-top: 30px;
+    margin-left: 16px;
+    padding: 6px;
+    background-color: #002b3b;
+    border-radius: 8px;
+}

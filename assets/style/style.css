@@ -2,7 +2,7 @@ nav, footer{
     background-color: #0b2358;
     font-family: "Kanit", sans-serif;
 }
-.active{
+a.active{
     font-weight: bolder !important;
     background-color: #c01b5a;
     border-radius: 16px;
@@ -35,6 +35,10 @@ button{
     border-radius: 16px;
 }
 
+
+.whoAreWe{
+    font-family: "Patrick Hand", cursive;
+}
 .contactCard{
     width: 70vw;
     background-color: #0340c5;

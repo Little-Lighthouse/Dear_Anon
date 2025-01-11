@@ -4,15 +4,31 @@ nav, footer{
 }
 a.active{
     font-weight: bolder !important;
-    background-color: #c01b5a;
+    background-color: #1cb8b4;
     border-radius: 16px;
 }
 
-@media screen and (max-width: 600px){
-    .imgWelcome{
-        width: 85vw !important;
-    }
+section{
+    font-family: "Patrick Hand", cursive;
 }
+section img.welcomeImage{
+    max-width: 700px;
+    min-width: 280px;
+}
+.profiles a{
+    font-size: 50px;
+    padding: 6px;
+    margin: 4px;
+    padding: 5px;
+    text-decoration: none;
+    color: #3b3131;
+}
+
+.Pillars button{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px){.imgWelcome{width: 85vw !important;}}
 
 .formContainer{
     margin: 40px 10px;
@@ -27,7 +43,7 @@ input, textarea{
     width: 96%;
     border-radius: 15px;
 }
-button{
+.formBut{
     width: 200px;
     padding: 6px;
     color: #fff;
@@ -35,10 +51,6 @@ button{
     border-radius: 16px;
 }
 
-
-.whoAreWe{
-    font-family: "Patrick Hand", cursive;
-}
 .contactCard{
     width: 70vw;
     background-color: #0340c5;

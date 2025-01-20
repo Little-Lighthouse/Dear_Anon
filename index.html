@@ -17,14 +17,14 @@
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-        <title>Your BFF | Home</title>
+        <title>Dear Anon | Home</title>
     </head>
     <body>
         <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/YourBFF/"><img src="assets/image/Logo.jpeg" alt="Logo" style="width:40px;" class="rounded-pill"></a>
+                <a class="navbar-brand" href="/Dear_Anon/"><img src="assets/image/Logo.jpeg" alt="Logo" style="width:40px;" class="rounded-pill"></a>
                 
                 <button class="navbar-toggler btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
                 
@@ -34,7 +34,10 @@
                             <a class="nav-link px-2 text-white active" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-2 text-white" href="assets/page/chat.html"><i class="bi bi-chat-left-text-fill"></i> Chat</a>
+                            <a class="nav-link px-2 text-white" href="assets/page/resources.html"><i class="bi bi-box2-heart-fill"></i> Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-white" href="assets/page/advice.html"><i class="bi bi-hearts"></i> Advice</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-2 text-white" href="assets/page/about.html"><i class="bi bi-info-circle-fill"></i> About</a>
@@ -44,26 +47,139 @@
             </div>
         </nav>
 
-        <section class="min-vh-100 d-flex align-items-center">
+        <section class="VidSection">
+            <video autoplay muted loop playsinline class="BgVid">
+                <source src="assets/image/VideobyAntoniShkraba.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="overlay-content">
+                <p>Here, we listen. Share your thoughts, struggles, or challenges without fear of judgement. <b>Your voice matters.</b></p>
+            </div>
+        </section>
+                   
+        <section class="ChatBoxSection d-flex justify-content-center mb-5">
+            <div class="formContainer w-75 p-4 mb-5">
+                <h1 style="text-align: center;">ရင်ဖွင့်ကြမယ်</h1>
+                <form action="https://formsubmit.co/apacheah64a.robert@gmail.com" method="POST">
+                    <input type="text" name="_honey" style="display:none;">
+                    <input type="hidden" name="_subject" value="Repsonse From Your Best Friend Forever Form">
+                    <input type="hidden" name="_template" value="box">
+            
+                    <input type="hidden" name="_next" value="../page/thankYou.html">
+
+                    <label for="email" class="form-label mt-3">Email: (Optional)</label>
+                    <input class="form-control w-100" type="email" name="Email" placeholder="Email Address">
+            
+                    <label class="d-block mt-3 mb-1" for="comment" class="form-label">What is your thought?</label>
+                    <textarea class="w-100" rows="6" id="comment" name="Message" placeholder="Lorem Ipsum"></textarea>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="formBut" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="IntroSection min-vh-100 d-flex align-items-center">
             <div class="container text-center">
                 <h1 class="mb-5"><i class="bi bi-flag-fill"></i> Our Dedicated Goal</h1>
                 <p class="w-50 m-auto">To illuminate your path and guide you through obstacles and challenges with unwavering commitment. Apart from these, there's more!</p><br>
-                <a class="btn btn-outline-primary" href="assets/page/about.html">ABOUT US</a><br>
                 <div class="profiles mt-4">
                     <a href="https://www.facebook.com/profile.php?id=100094347565758"><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a onclick="notAvaSer()"><i class="bi bi-linkedin"></i></a>
                     <a href="https://t.me/+TxWFd67aPqYyYmFl "><i class="bi bi-telegram"></i></a>
                 </div>
             </div>
         </section>
 
-        <section class="min-vh-100 d-flex align-items-center justify-content-center">
-            <img class="welcomeImage" src="assets/image/welcome.png" alt="Welcome">
+        <section class="PagesSection min-vh-100 d-flex align-items-center justify-content-center">
+            <div class="container-fluid w-100">
+                <div class="container text-center px-4 py-2 m-3 border border-info bg-dark text-white">
+                    <h3 class="my-3 p-1">Who We Are</h3>
+                    <p>Little Lighthouse (LLH) is a youth organization mainly focusses on content creation, which involves sharing knowledge and essential basic skills in life for young minds to be happy in life.</p>
+                    <a class="btn btn-outline-primary" href="assets/page/about.html">ABOUT US</a><br>
+                </div>
+                <div class="container text-center px-4 py-2 m-3 border border-info bg-dark text-white">
+                    <h3 class="my-3 p-1">Resources</h3>
+                    <p>Ipsum reprehenderit nulla incididunt fugiat id velit do amet sit labore cillum. Amet aute do laboris ut enim consequat duis reprehenderit ut sint. Exercitation non sint nisi culpa est aliquip pariatur excepteur irure.</p>
+                    <a class="btn btn-outline-primary" href="assets/page/resources.html">RESOURCES</a><br>
+                </div>
+                <div class="container text-center px-4 py-2 m-3 border border-info bg-dark text-white">
+                    <h3 class="my-3 p-1">What We Offer</h3>
+                    <p>Ipsum reprehenderit nulla incididunt fugiat id velit do amet sit labore cillum. Amet aute do laboris ut enim consequat duis reprehenderit ut sint. Exercitation non sint nisi culpa est aliquip pariatur excepteur irure.</p>
+                    <a class="btn btn-outline-primary" href="assets/page/advice.html">OUR ADVICE</a><br>
+                </div>
+            </div>
+        </section>
+
+        <section class="AdviceSection IntroSection min-vh-100 d-flex align-items-center">
+            <div class="container text-center">
+                <h1 class="mb-5"><i class="bi bi-chat-heart-fill"></i> What We Give</h1>
+                <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner border border-warning">
+                      <div class="carousel-item overflow-auto active" data-bs-interval="3000">
+                        <h1>John Doe</h1>
+                        <p>
+                            Sunt elit esse voluptate consectetur sint ad aute ad Lorem consectetur laborum adipisicing et. Est amet minim fugiat adipisicing irure reprehenderit eiusmod elit consectetur. Ullamco non nisi sunt exercitation.<br><br>
+                            Consequat sit esse do sunt incididunt aliquip. Qui dolore voluptate ex Lorem eiusmod commodo minim sit sit sint velit. Cupidatat eiusmod consequat culpa enim veniam quis culpa aute eu eiusmod ipsum. Et irure occaecat sint est exercitation sunt non minim id pariatur. Aliqua culpa est dolor magna amet quis mollit laborum culpa nulla dolore non minim.<br><br>
+                            Esse magna excepteur pariatur est eu voluptate dolor. Elit cillum ex labore consectetur sunt fugiat aliquip mollit qui adipisicing sint consectetur Lorem ullamco. Adipisicing cupidatat enim sit minim dolore veniam elit. Dolor consequat sint sunt proident velit ullamco qui ipsum esse aliqua veniam mollit voluptate non. Nulla sint sit ea laborum amet anim consequat fugiat. Laborum et qui deserunt tempor minim pariatur id excepteur ipsum Lorem eu.<br><br>
+                            Occaecat pariatur pariatur labore elit eiusmod incididunt cillum irure aliqua est laboris mollit nulla. Est irure do anim anim magna commodo excepteur. Et ut duis ex dolore voluptate qui duis id excepteur dolore irure sit. Proident pariatur dolor anim aute amet in incididunt nisi est. Lorem Lorem non nostrud elit duis anim duis.<br><br>
+                        </p>
+                        <p>
+                            Sunt elit esse voluptate consectetur sint ad aute ad Lorem consectetur laborum adipisicing et. Est amet minim fugiat adipisicing irure reprehenderit eiusmod elit consectetur. Ullamco non nisi sunt exercitation.<br><br>
+                            Consequat sit esse do sunt incididunt aliquip. Qui dolore voluptate ex Lorem eiusmod commodo minim sit sit sint velit. Cupidatat eiusmod consequat culpa enim veniam quis culpa aute eu eiusmod ipsum. Et irure occaecat sint est exercitation sunt non minim id pariatur. Aliqua culpa est dolor magna amet quis mollit laborum culpa nulla dolore non minim.<br><br>
+                            Esse magna excepteur pariatur est eu voluptate dolor. Elit cillum ex labore consectetur sunt fugiat aliquip mollit qui adipisicing sint consectetur Lorem ullamco. Adipisicing cupidatat enim sit minim dolore veniam elit. Dolor consequat sint sunt proident velit ullamco qui ipsum esse aliqua veniam mollit voluptate non. Nulla sint sit ea laborum amet anim consequat fugiat. Laborum et qui deserunt tempor minim pariatur id excepteur ipsum Lorem eu.<br><br>
+                            Occaecat pariatur pariatur labore elit eiusmod incididunt cillum irure aliqua est laboris mollit nulla. Est irure do anim anim magna commodo excepteur. Et ut duis ex dolore voluptate qui duis id excepteur dolore irure sit. Proident pariatur dolor anim aute amet in incididunt nisi est. Lorem Lorem non nostrud elit duis anim duis.<br><br>
+                        </p>
+                        <p>
+                            Sunt elit esse voluptate consectetur sint ad aute ad Lorem consectetur laborum adipisicing et. Est amet minim fugiat adipisicing irure reprehenderit eiusmod elit consectetur. Ullamco non nisi sunt exercitation.<br><br>
+                            Consequat sit esse do sunt incididunt aliquip. Qui dolore voluptate ex Lorem eiusmod commodo minim sit sit sint velit. Cupidatat eiusmod consequat culpa enim veniam quis culpa aute eu eiusmod ipsum. Et irure occaecat sint est exercitation sunt non minim id pariatur. Aliqua culpa est dolor magna amet quis mollit laborum culpa nulla dolore non minim.<br><br>
+                            Esse magna excepteur pariatur est eu voluptate dolor. Elit cillum ex labore consectetur sunt fugiat aliquip mollit qui adipisicing sint consectetur Lorem ullamco. Adipisicing cupidatat enim sit minim dolore veniam elit. Dolor consequat sint sunt proident velit ullamco qui ipsum esse aliqua veniam mollit voluptate non. Nulla sint sit ea laborum amet anim consequat fugiat. Laborum et qui deserunt tempor minim pariatur id excepteur ipsum Lorem eu.<br><br>
+                            Occaecat pariatur pariatur labore elit eiusmod incididunt cillum irure aliqua est laboris mollit nulla. Est irure do anim anim magna commodo excepteur. Et ut duis ex dolore voluptate qui duis id excepteur dolore irure sit. Proident pariatur dolor anim aute amet in incididunt nisi est. Lorem Lorem non nostrud elit duis anim duis.<br><br>
+                        </p>
+                      </div>
+                      <div class="carousel-item overflow-auto" data-bs-interval="3000">
+                        <h1>Linda</h1>
+                        <p>
+                            Sunt elit esse voluptate consectetur sint ad aute ad Lorem consectetur laborum adipisicing et. Est amet minim fugiat adipisicing irure reprehenderit eiusmod elit consectetur. Ullamco non nisi sunt exercitation.<br><br>
+                            Consequat sit esse do sunt incididunt aliquip. Qui dolore voluptate ex Lorem eiusmod commodo minim sit sit sint velit. Cupidatat eiusmod consequat culpa enim veniam quis culpa aute eu eiusmod ipsum. Et irure occaecat sint est exercitation sunt non minim id pariatur. Aliqua culpa est dolor magna amet quis mollit laborum culpa nulla dolore non minim.<br><br>
+                            Esse magna excepteur pariatur est eu voluptate dolor. Elit cillum ex labore consectetur sunt fugiat aliquip mollit qui adipisicing sint consectetur Lorem ullamco. Adipisicing cupidatat enim sit minim dolore veniam elit. Dolor consequat sint sunt proident velit ullamco qui ipsum esse aliqua veniam mollit voluptate non. Nulla sint sit ea laborum amet anim consequat fugiat. Laborum et qui deserunt tempor minim pariatur id excepteur ipsum Lorem eu.<br><br>
+                            Occaecat pariatur pariatur labore elit eiusmod incididunt cillum irure aliqua est laboris mollit nulla. Est irure do anim anim magna commodo excepteur. Et ut duis ex dolore voluptate qui duis id excepteur dolore irure sit. Proident pariatur dolor anim aute amet in incididunt nisi est. Lorem Lorem non nostrud elit duis anim duis.<br><br>
+                        </p>
+                      </div>
+                      <div class="carousel-item overflow-auto" data-bs-interval="3000">
+                        <h1>Jamal</h1>
+                        <p>
+                            Sunt elit esse voluptate consectetur sint ad aute ad Lorem consectetur laborum adipisicing et. Est amet minim fugiat adipisicing irure reprehenderit eiusmod elit consectetur. Ullamco non nisi sunt exercitation.<br><br>
+                            Consequat sit esse do sunt incididunt aliquip. Qui dolore voluptate ex Lorem eiusmod commodo minim sit sit sint velit. Cupidatat eiusmod consequat culpa enim veniam quis culpa aute eu eiusmod ipsum. Et irure occaecat sint est exercitation sunt non minim id pariatur. Aliqua culpa est dolor magna amet quis mollit laborum culpa nulla dolore non minim.<br><br>
+                            Esse magna excepteur pariatur est eu voluptate dolor. Elit cillum ex labore consectetur sunt fugiat aliquip mollit qui adipisicing sint consectetur Lorem ullamco. Adipisicing cupidatat enim sit minim dolore veniam elit. Dolor consequat sint sunt proident velit ullamco qui ipsum esse aliqua veniam mollit voluptate non. Nulla sint sit ea laborum amet anim consequat fugiat. Laborum et qui deserunt tempor minim pariatur id excepteur ipsum Lorem eu.<br><br>
+                            Occaecat pariatur pariatur labore elit eiusmod incididunt cillum irure aliqua est laboris mollit nulla. Est irure do anim anim magna commodo excepteur. Et ut duis ex dolore voluptate qui duis id excepteur dolore irure sit. Proident pariatur dolor anim aute amet in incididunt nisi est. Lorem Lorem non nostrud elit duis anim duis.<br><br>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+                      <span class="text-dark" style="font-size: 37px;" aria-hidden="true"><i class="bi bi-arrow-left-circle-fill"></i></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+                      <span class="text-dark" style="font-size: 37px;" aria-hidden="true"><i class="bi bi-arrow-right-circle-fill"></i></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
         </section>
 
 
-        <footer class="mt-3 fixed-bottom">
-            <p class="text-center text-white m-0 p-2">🤗 Made with ❤ by Little Lighthouse 🕯</p>
+        <footer class="mt-3">
+            <p class="text-center text-white m-0 p-2">🤗 Made with ❤ by Little Lighthouse</p>
+            <p class="text-center text-white m-0 p-2">© 2025 Little Lighthouse</p>
         </footer>
 
         <script src="assets/script/script.js"></script>

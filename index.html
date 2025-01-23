@@ -18,6 +18,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <script defer src="assets/script/script.js"></script>
 
         <title>Dear Anon | Home</title>
     </head>
@@ -37,13 +39,20 @@
                             <a class="nav-link px-2 text-white" href="index.html#ChatBoxSection"><i class="bi bi-box2-heart-fill"></i> Chat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-2 text-white" href="assets/page/resources.html"><i class="bi bi-box2-heart-fill"></i> Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-2 text-white" href="assets/page/advice.html"><i class="bi bi-hearts"></i> Advice</a>
+                            <a class="nav-link px-2 text-white" href="assets/page/advice.html"><i class="bi bi-hearts"></i> Our Advice</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-2 text-white" href="assets/page/about.html"><i class="bi bi-info-circle-fill"></i> About</a>
+                        </li>
+
+                        <li class="nav-item px-2 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-box2-heart-fill"></i> Resources</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="assets/page/resources.html">Healing</a></li>
+                              <li><a class="dropdown-item" href="assets/page/resources.html">Conuselling Session</a></li>
+                              <li><a class="dropdown-item" href="assets/page/resources.html">Professional Conselling Org</a></li>
+                              <li><a class="dropdown-item" href="assets/page/resources.html">Join & Help</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -56,12 +65,14 @@
                 Your browser does not support the video tag.
             </video>
 
-            <div class="overlay-content">
-                <p>Here, we listen. Share your thoughts, struggles, or challenges without fear of judgement. <b>Your voice matters.</b></p>
+            <div class="min-vh-100 d-flex justify-content-center align-items-center p-3 hidden">
+                <div>
+                    <p class="text-white text-center">Here, we listen. Share your thoughts, struggles, or challenges without fear of judgement. <b>Your voice matters.</b></p>
+                </div>
             </div>
         </section>
                    
-        <section id="ChatBoxSection" class="ChatBoxSection d-flex justify-content-center mb-5">
+        <section id="ChatBoxSection" class="ChatBoxSection d-flex justify-content-center mb-5 hidden">
             <div class="formContainer w-75 p-4 mb-5">
                 <h1 style="text-align: center;">ရင်ဖွင့်ကြမယ်</h1>
                 <form action="https://formsubmit.co/e081a4f661691e3d3bec5596b057fe4f" method="POST">
@@ -83,39 +94,22 @@
             </div>
         </section>
 
-        <section class="IntroSection min-vh-100 d-flex align-items-center">
-            <div class="container text-center">
-                <h1 class="mb-5"><i class="bi bi-flag-fill"></i> Our Dedicated Goal</h1>
-                <p class="w-50 m-auto">To illuminate your path and guide you through obstacles and challenges with unwavering commitment. Apart from these, there's more!</p><br>
-                <div class="profiles mt-4">
-                    <a href="https://www.facebook.com/profile.php?id=100094347565758"><i class="bi bi-facebook"></i></a>
-                    <a onclick="notAvaSer()"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://t.me/+TxWFd67aPqYyYmFl "><i class="bi bi-telegram"></i></a>
-                </div>
-            </div>
-        </section>
-
         <section class="PagesSection min-vh-100 d-flex align-items-center justify-content-center">
-            <div class="container-fluid w-100">
-                <div class="container text-center px-4 py-2 m-3 border border-info bg-dark text-white">
+            <div class="container-fluid w-100 hidden">
+                <div class="container text-center px-4 py-2 m-3">
                     <h3 class="my-3 p-1">Who We Are</h3>
                     <p>Little Lighthouse (LLH) is a youth organization mainly focusses on content creation, which involves sharing knowledge and essential basic skills in life for young minds to be happy in life.</p>
                     <a class="btn btn-outline-primary" href="assets/page/about.html">ABOUT US</a><br>
                 </div>
-                <div class="container text-center px-4 py-2 m-3 border border-info bg-dark text-white">
-                    <h3 class="my-3 p-1">Resources</h3>
-                    <p>Ipsum reprehenderit nulla incididunt fugiat id velit do amet sit labore cillum. Amet aute do laboris ut enim consequat duis reprehenderit ut sint. Exercitation non sint nisi culpa est aliquip pariatur excepteur irure.</p>
-                    <a class="btn btn-outline-primary" href="assets/page/resources.html">RESOURCES</a><br>
-                </div>
-                <div class="container text-center px-4 py-2 m-3 border border-info bg-dark text-white">
-                    <h3 class="my-3 p-1">What We Offer</h3>
-                    <p>Ipsum reprehenderit nulla incididunt fugiat id velit do amet sit labore cillum. Amet aute do laboris ut enim consequat duis reprehenderit ut sint. Exercitation non sint nisi culpa est aliquip pariatur excepteur irure.</p>
-                    <a class="btn btn-outline-primary" href="assets/page/advice.html">OUR ADVICE</a><br>
+                <div class="container text-center px-4 py-2 m-3">
+                    <h3 class="my-3 p-1">Knock Knock!</h3>
+                    <p>Enjoy our works or would like to give valuable suggestion? Feel free to say in our Facebook page review!</p>
+                    <a target="_blank" class="btn btn-outline-primary" href="https://www.facebook.com/profile.php?id=100094347565758&sk=reviews">REVIEWS</a><br>
                 </div>
             </div>
         </section>
 
-        <section class="AdviceSection IntroSection min-vh-100 d-flex align-items-center">
+        <section class="AdviceSection IntroSection min-vh-100 d-flex align-items-center hidden">
             <div class="container text-center">
                 <h1 class="mb-5"><i class="bi bi-chat-heart-fill"></i> Preview To What We Do</h1>
                 <div id="Carousel" class="carousel slide" data-bs-ride="carousel">
@@ -167,6 +161,5 @@
             <p class="text-center text-white m-0 p-2">© 2025 Little Lighthouse</p>
         </footer>
 
-        <script src="assets/script/script.js"></script>
     </body>
 </html>

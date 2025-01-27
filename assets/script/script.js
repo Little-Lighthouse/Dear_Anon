@@ -13,5 +13,5 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 /* ---- NOT AVAILABLE ---- */
 function notAvaSer(){
-    alert("The requested profile is currently not available.\nWe apologize for the inconvenience.");
+    alert("The requested profile is currently not available.");
   }

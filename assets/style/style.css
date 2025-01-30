@@ -1,11 +1,8 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{font-family: "Arsenal", serif !important;background-color: #fff2c5 !important;}
-nav, footer{
-    background-color: #0b2358;
-}
-section p{
-    font-size: 17px;
-}
+nav, footer{background-color: #0b2358;}
+section p{font-size: 17px;}
+.textIndent{text-indent: 3em;}
 a.active{
     font-weight: bolder !important;
     background-color: #1cb8b4;
@@ -57,10 +54,6 @@ a.active{
     color: #3b3131;
 }
 
-.Pillars button{
-    font-size: 25px;
-}
-
 @media screen and (max-width: 600px){.imgWelcome{width: 85vw !important;}}
 
 .formContainer{
@@ -96,15 +89,8 @@ input, textarea{
     float: right;
 }
 
-.hidden{
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-.show{
-    filter: blur(0);
-    transform: translateX(0);
-}
+.hiddenTransit{filter: blur(5px);transform: translateX(-100%);transition: all 1s;}
+.showTransit{filter: blur(0);transform: translateX(0);}
 .PagesSection .container:nth-child(2){transition-delay: 300ms !important;}
 .PagesSection .container:nth-child(3){transition-delay: 600ms !important;}
 .PagesSection .container:nth-child(4){transition-delay: 900ms !important;}
@@ -140,11 +126,6 @@ input, textarea{
 }
 
 
-a.thankYou{
-    width: 160px;
-    margin-top: 30px;
-    margin-left: 16px;
-    padding: 6px;
-    background-color: #002b3b;
-    border-radius: 8px;
-}
+
+.card{max-width:230px !important;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;opacity:0.9;background-color: #13376B !important;}
+.card-body{color:#fff !important;}

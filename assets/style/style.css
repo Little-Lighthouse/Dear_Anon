@@ -78,12 +78,12 @@ input, textarea{
     border-radius: 16px;
 }
 
-.PagesSection div:nth-child(1), .PagesSection div:nth-child(3), .PagesSection div:nth-child(5){
+.SBS div:nth-child(1), .SBS div:nth-child(3){
     width: 60vw;
     border-radius: 40px;
     float: left;
 }
-.PagesSection div:nth-child(2), .PagesSection div:nth-child(4), .PagesSection div:nth-child(6){
+.SBS div:nth-child(2){
     width: 60vw;
     border-radius: 40px;
     float: right;
@@ -91,12 +91,9 @@ input, textarea{
 
 .hiddenTransit{filter: blur(5px);transform: translateX(-100%);transition: all 1s;}
 .showTransit{filter: blur(0);transform: translateX(0);}
-.PagesSection .container:nth-child(2){transition-delay: 300ms !important;}
-.PagesSection .container:nth-child(3){transition-delay: 600ms !important;}
-.PagesSection .container:nth-child(4){transition-delay: 900ms !important;}
-.PagesSection .container:nth-child(5){transition-delay: 1200ms !important;}
-.PagesSection .container:nth-child(6){transition-delay: 1500ms !important;}
-.PagesSection .container{
+.SBS .container:nth-child(2){transition-delay: 300ms !important;}
+.SBS .container:nth-child(3){transition-delay: 600ms !important;}
+.SBS .container{
     background: rgba(255, 255, 255, 0.3);
     border-radius: 16px;
     box-shadow: 0 4px 30px #0000001a;

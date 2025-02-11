@@ -19,7 +19,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Patrick+Hand&display=swap" rel="stylesheet">
 
-        <title>Our Heartfelts</title>
+        <title>Chat</title>
     </head>
     <body>
         <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
@@ -34,10 +34,10 @@
                             <a class="nav-link px-2 text-white" href="../../index.html"><i class="bi bi-house-door-fill"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-2 text-white" href="chat.html"><i class="bi bi-box2-heart-fill"></i> Chat</a>
+                            <a class="nav-link px-2 text-white active" href="chat.html"><i class="bi bi-box2-heart-fill"></i> Chat</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-2 text-white active" href="heartfelts.html"><i class="bi bi-hearts"></i> Our Heartfelts</a>
+                            <a class="nav-link px-2 text-white" href="heartfelts.html"><i class="bi bi-hearts"></i> Our Heartfelts</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-2 text-white" href="about.html"><i class="bi bi-info-circle-fill"></i> About</a>
@@ -56,8 +56,28 @@
                 </div>
             </div>
         </nav>
+                   
+        <section id="ChatBoxSection" class="ChatBoxSection min-vh-100 d-flex justify-content-center py-5 my-5">
+            <div class="formContainer w-75 p-4">
+                <h1 style="text-align: center;">Dear Anon</h1>
+                <form action="https://formsubmit.co/75e9deef503606dcdbccef58ee424eee" method="POST">
+                    <input type="text" name="_honey" style="display:none;">
+                    <input type="hidden" name="_subject" value="Repsonse From Dear Anon">
+                    <input type="hidden" name="_template" value="box">
+            
+                    <input type="hidden" name="_next" value="https://little-lighthouse.github.io/Dear_Anon/assets/page/thankYou.html">
 
-        <h1 class="text-center">Currently Under Construction</h1>
+                    <label for="email" class="form-label mt-3">Email: (Optional)</label>
+                    <input class="form-control w-100" type="email" name="Email" placeholder="Email Address">
+            
+                    <label class="d-block mt-3 mb-1" for="comment" class="form-label">If your feelings could speak, what would they say right now?</label>
+                    <textarea class="w-100" rows="6" id="comment" name="Message" placeholder="I am feeling...."></textarea>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="formBut btn btn-outline-primary" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section><hr>
 
         <footer class="mt-5 fixed-bottom">
             <p class="text-center text-white m-0 p-2">🤗 Made with ❤ by Little Lighthouse 🕯</p>
